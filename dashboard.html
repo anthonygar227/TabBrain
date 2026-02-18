@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TabBrain Dashboard</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1 class="logo"><img class="logo-icon" src="icons/icon-header.png" width="34" height="34" alt="">TAB&thinsp;BRAIN</h1>
+    </div>
+    <div class="header-center">
+      <input type="text" id="search" placeholder="Search tabs..." class="search-input" />
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" id="theme-toggle"></button>
+      <button id="open-settings" class="btn-secondary">Settings</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="empty-state" class="empty-dashboard" style="display:none;">
+      <p class="empty-icon">🧠</p>
+      <h2>No tabs tracked yet</h2>
+      <p>Browse around and TabBrain will start organizing your tabs automatically.</p>
+    </div>
+
+    <div id="no-results" class="empty-dashboard" style="display:none;">
+      <h2>No matching tabs</h2>
+      <p>Try a different search term.</p>
+    </div>
+
+    <section id="tab-groups" class="tab-groups"></section>
+
+    <section id="saved-section" class="saved-section" style="display:none;">
+      <h2 class="section-title">Saved for Later</h2>
+      <div id="saved-tabs" class="tab-grid"></div>
+    </section>
+  </main>
+
+  <script src="utils.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

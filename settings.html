@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TabBrain Settings</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="settings-container">
+    <div class="settings-header">
+      <h1><img class="logo-icon" src="icons/icon-header.png" width="28" height="28" alt="">Settings</h1>
+      <button class="theme-toggle" id="theme-toggle"></button>
+    </div>
+    <p class="settings-desc">
+      Paste your free Groq API key below to enable AI-powered tab analysis.
+      Get one at <a href="https://console.groq.com" target="_blank">console.groq.com</a>.
+    </p>
+    <div class="field">
+      <label for="api-key">API Key</label>
+      <input type="password" id="api-key" placeholder="gsk_..." />
+    </div>
+    <div class="actions">
+      <button id="save-key" class="btn-primary">Save Key</button>
+      <span id="status" class="status-msg"></span>
+    </div>
+    <p class="settings-note">
+      Without an API key, TabBrain still works using basic keyword matching.
+      The AI just makes it smarter.
+    </p>
+
+    <div class="danger-zone">
+      <h2>Danger Zone</h2>
+      <p>Permanently delete all tracked tabs and saved data.</p>
+      <button id="clear-data" class="btn-danger">Clear All Data</button>
+    </div>
+  </div>
+  <script src="utils.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* settings.css — Stille-inspired dark settings */
+
+.settings-container {
+  max-width: 480px;
+  margin: 100px auto;
+  padding: 40px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.settings-container h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--accent);
+}
+
+.settings-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  letter-spacing: 0.2px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+}
+
+.field input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.status-msg {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.settings-note {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+.danger-zone {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.danger-zone h2 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #FF453A;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.danger-zone p {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+.btn-danger {
+  background: none;
+  color: #FF453A;
+  border: 1px solid rgba(255, 69, 58, 0.3);
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.btn-danger:hover {
+  background: #FF453A;
+  color: #fff;
+  border-color: #FF453A;
+  box-shadow: 0 0 20px rgba(255, 69, 58, 0.15);
+}

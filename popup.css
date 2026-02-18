@@ -1,0 +1,93 @@
+/* popup.css — Stille-inspired dark popup */
+
+.popup-container {
+  width: 340px;
+  padding: 20px;
+  background: var(--bg-elevated);
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.popup-title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--accent);
+}
+
+.tab-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 10px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease;
+}
+.tab-row:hover {
+  background: var(--surface-hover);
+}
+
+.favicon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.tab-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tab-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.1px;
+}
+
+.tab-reason {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 3px;
+  letter-spacing: 0.2px;
+}
+
+.tab-time {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.empty-state {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 32px 0;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+#open-dashboard {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 28px;
+}
