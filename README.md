@@ -1,35 +1,41 @@
-TabBrain
-AI-powered Chrome extension that tracks and categorizes browser tabs so you never forget why you opened them.
-Overview
+# TabBrain
+
+**AI-powered Chrome extension that tracks and categorizes browser tabs so you never forget why you opened them.**
+
+## Overview
+
 TabBrain is a Chrome extension that automatically tracks, categorizes, and organizes your browser tabs by context. It detects what you're doing — learning, developing, shopping, communicating — and groups your tabs accordingly, giving you a clean dashboard to manage your browsing workflow.
-Features
 
-Automatic Tab Classification — Categorizes tabs into context groups (Learning, Development, Shopping, Communication, Work, etc.)
-Smart Dashboard — Visual overview of all open tabs organized by category with tab counts
-Tab Search — Quickly find any open tab across all categories
-One-Click Management — Close all tabs in a category or switch to any tab instantly
-Activity Tracking — See when each tab was last accessed with relative timestamps
-Context Descriptions — Generates brief descriptions of tab activity based on page titles and URLs
-Customizable Settings — Configure categories, themes, and classification preferences
+## Features
 
-Tech Stack
+- **Automatic Tab Classification** — Categorizes tabs into context groups (Learning, Development, Shopping, Communication, Work, etc.)
+- **Smart Dashboard** — Visual overview of all open tabs organized by category with tab counts
+- **Tab Search** — Quickly find any open tab across all categories
+- **One-Click Management** — Close all tabs in a category or switch to any tab instantly
+- **Activity Tracking** — See when each tab was last accessed with relative timestamps
+- **Context Descriptions** — Generates brief descriptions of tab activity based on page titles and URLs
+- **Customizable Settings** — Configure categories, themes, and classification preferences
 
-JavaScript — Core extension logic
-HTML/CSS — Dashboard UI, popup, and settings interfaces
-Chrome Extensions API (Manifest V3) — Tab tracking, background service worker, storage
+## Tech Stack
 
-Installation
+- **JavaScript** — Core extension logic
+- **HTML/CSS** — Dashboard UI, popup, and settings interfaces
+- **Chrome Extensions API (Manifest V3)** — Tab tracking, background service worker, storage
 
-Clone this repository:
+## Installation
 
-bash   git clone https://github.com/anthonygar227/TabBrain.git
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/anthonygar227/TabBrain.git
+   ```
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top right)
+4. Click **Load unpacked** and select the cloned `TabBrain` folder
+5. The TabBrain icon will appear in your extensions toolbar
 
-Open Chrome and navigate to chrome://extensions/
-Enable Developer mode (toggle in the top right)
-Click Load unpacked and select the cloned TabBrain folder
-The TabBrain icon will appear in your extensions toolbar
+## Project Structure
 
-Project Structure
+```
 TabBrain/
 ├── manifest.json        # Extension configuration (Manifest V3)
 ├── background.js        # Service worker for tab tracking
@@ -40,15 +46,17 @@ TabBrain/
 ├── shared.css           # Shared styles across views
 ├── utils.js             # Utility functions
 └── gen_icons.py         # Icon generation script
-Usage
+```
 
-Click the TabBrain icon in your toolbar to see a quick overview of categorized tabs
-Click Dashboard for a full-screen view of all tabs organized by category
-Use the search bar to find specific tabs across all categories
-Click Close All on any category to bulk-close related tabs
-Access Settings to customize categories and preferences
+## Usage
 
-Author
-Anthony Garcia-Marquez
+1. Click the **TabBrain** icon in your toolbar to see a quick overview of categorized tabs
+2. Click **Dashboard** for a full-screen view of all tabs organized by category
+3. Use the **search bar** to find specific tabs across all categories
+4. Click **Close All** on any category to bulk-close related tabs
+5. Access **Settings** to customize categories and preferences
 
-GitHub: @anthonygar227
+## Author
+
+**Anthony Garcia-Marquez**
+- GitHub: [@anthonygar227](https://github.com/anthonygar227)
