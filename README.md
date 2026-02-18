@@ -33,6 +33,16 @@ TabBrain is a Chrome extension that automatically tracks, categorizes, and organ
 4. Click **Load unpacked** and select the cloned `TabBrain` folder
 5. The TabBrain icon will appear in your extensions toolbar
 
+## Configuration
+
+TabBrain works out of the box with built-in keyword-based categorization. For enhanced AI-powered categorization, you can optionally add a Groq API key:
+
+1. Get a free API key from [groq.com](https://console.groq.com/)
+2. Open TabBrain's **Settings** page
+3. Paste your key and click **Save**
+
+Without a key, TabBrain still categorizes tabs using keyword matching on URLs and page titles. With a key, it uses the Groq LLM for more accurate, context-aware categorization and descriptions.
+
 ## Project Structure
 
 ```
